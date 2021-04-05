@@ -1,0 +1,68 @@
+### Site Settings ###
+title               : thang's note
+description         : after all, tomorrow is another day!
+baseurl             :
+repository          : tluu39/tluu39.github.io
+remote_theme        : /
+
+### Plugins ###
+plugins:
+  - jemoji
+
+### Navbar Settings ###
+nav_exclude:
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - documentation/partials/**
+  - node_modules/**
+
+### Author Info ###
+author:
+  name              : thang
+  image             : assets/avatar.jpg
+  email             : dtluu39@gmail.com
+  github            : tluu39
+  kaggle            : tluu39
+  linkedin          : thangluu
+
+### Posts ###
+permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements:                                             # For Documentation Only
+    output: true                                        # For Documentation Only
+
+### Disqus ###
+disqus:
+  shortname:                  # Your website Shortname on disqus
+
+### Analytics ###
+analytics:
+  enabled: true                                        # Set true to enable analytics
+  google:
+    tracking_id: G-NJDWZ3JCG6
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true                                   # Set to true to enable disqus comments
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

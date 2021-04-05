@@ -1,0 +1,42 @@
+# Get Icons  from : https://fontawesome.com/icons
+# Get Colors from : https://brandcolors.net/
+
+email:
+  url   : "mailto:"
+  icon  : fas fa-envelope
+  color : db4437
+
+github:
+  url   : https://www.github.com/
+  icon  : fab fa-github
+  color : 333333
+
+gitlab:
+  url   : https://www.gitlab.com/
+  icon  : fab fa-gitlab
+  color : fca326
+
+kaggle:
+  url   : https://www.kaggle.com/
+  icon  : fab fa-kaggle
+  color : 20beff
+
+linkedin:
+  url   : https://www.linkedin.com/in/
+  icon  : fab fa-linkedin-in
+  color : 007bb5
+
+spotify:
+  url   : https://open.spotify.com/user/
+  icon  : fab fa-spotify
+  color : 1db954
+
+stackoverflow:
+  url   : https://stackoverflow.com/u/
+  icon  : fab fa-stack-overflow
+  color : f48024
+
+twitter:
+  url   : https://www.twitter.com/
+  icon  : fab fa-twitter
+  color : 1da1f2

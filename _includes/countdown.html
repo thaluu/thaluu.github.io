@@ -1,0 +1,54 @@
+{% include head.html %}
+
+<div class="container">
+  <div id="countdown">
+    <ul>
+      <li><span id="days"></span>days</li>
+      <li><span id="hours"></span>hours</li>
+      <li><span id="minutes"></span>minutes</li>
+      <li><span id="seconds"></span>seconds</li>
+    </ul>
+  </div>
+</div>
+
+<img src="/assets/images/readme.jpg" style="max-width:100%;">
+<script>
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let end_date = "2021-12-31 00:00:00",
+      countDown = new Date(end_date).getTime(),
+      x = setInterval(function() {    
+        let now = new Date().getTime(),
+            distance = countDown - now;
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+      }, 0)
+  }());
+
+</script>
+
+<style>
+body {
+  align-items: center;
+  display: flex;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 1em;
+}
+li span {
+  display: block;
+  font-size: 4rem;
+}
+</style>
