@@ -1,2 +1,2 @@
 # blog
-tluu39.github.io
+https://tluu39.github.io/
